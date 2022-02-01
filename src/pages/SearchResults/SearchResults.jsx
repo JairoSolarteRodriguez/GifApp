@@ -8,7 +8,7 @@ import debounce from 'just-debounce-it'
 
 const SearchResults = ({ params }) => {
 
-  const { keyword } = params
+  const {   } = params
   const { loading, gifs, setPage } = useGifs({ keyword })
   const externalRef = useRef()
   const {isNearScreen} = useNearScreen({

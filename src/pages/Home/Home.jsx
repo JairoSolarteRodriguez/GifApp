@@ -8,8 +8,10 @@ const POPULAR_GIFS = ["Matrix", "Programacion", "Gatos", "Perros", "Canada"]
 
 const Home = () =>{
   const [keyword, setKeyword] = useState('');
-  const [path, pushLocation] = useLocation()
-  const { loading, gifs } = useGifs()
+  // const [path, pushLocation] = useLocation()
+  const [pushLocation] = useLocation()
+  // const { loading, gifs } = useGifs()
+  const { gifs } = useGifs()
 
 
   const handleSubmit = event => {
